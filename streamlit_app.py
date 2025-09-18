@@ -1,5 +1,7 @@
 
+
 import streamlit as st
+import math
 
 st.title("넓이 계산기")
 
@@ -20,7 +22,7 @@ elif shape == "삼각형":
 elif shape == "원":
 	radius = st.number_input("반지름", min_value=0.0, value=0.0, step=0.1)
 	if st.button("원의 넓이 계산"):
-		area = 3.141592 * radius * radius
+		area = math.pi * radius * radius
 		st.success(f"원의 넓이: {area}")
 st.title("🎈 My new app")
 
