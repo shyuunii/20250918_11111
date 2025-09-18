@@ -22,7 +22,7 @@ elif shape == "삼각형":
 elif shape == "원":
 	radius = st.number_input("반지름", min_value=0.0, value=0.0, step=0.1)
 	if st.button("원의 넓이 계산"):
-		area = math.pi * radius * radius
-		st.success(f"원의 넓이: {area}")
+		area_pi = radius * radius
+		st.success(f"원의 넓이: {area_pi}π")
 st.title("🎈 My new app")
 
